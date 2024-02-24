@@ -53,6 +53,10 @@ ul {
   list-style: none;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
