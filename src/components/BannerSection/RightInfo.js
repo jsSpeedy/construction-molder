@@ -14,6 +14,10 @@ const Container = styled.div`
   display: grid;
   position: absolute;
   transform: translateY(-50%);
+
+  @media (max-width: 1535px) {
+    right: -60px;
+  }
 `;
 
 const Social = styled.a`
@@ -51,6 +55,19 @@ const InfoScroll = styled.div`
 
   .bar {
     transform: rotate(-90deg);
+  }
+
+  @media (max-width: 1535px) {
+    gap: 50px;
+
+    a {
+      font-size: 15px;
+    }
+
+    img {
+      width: 20px;
+      object-fit: contain;
+    }
   }
 `;
 

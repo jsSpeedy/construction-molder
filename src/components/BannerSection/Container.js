@@ -3,18 +3,26 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BannerContainer = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 `;
 
 const BannerRow = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex: 75% 25%;
 `;
 
 const BannerContent = styled.div`
   padding: 140px 0 180px;
+
+  @media (max-width: 1600px) and (min-width: 1200px) {
+    padding-left: 115px;
+  }
+
+  @media (max-width: 1535px) {
+    padding-left: 65px;
+  }
 `;
 
 const BannerCurrently = styled.a`
@@ -31,6 +39,10 @@ const BannerHeader = styled.h1`
   margin-bottom: 50px;
   font-weight: 600;
   line-height: 120%;
+
+  @media (max-width: 1535px) {
+    font-size: 86px;
+  }
 `;
 
 const BannerDesigners = styled.span`
@@ -127,11 +139,15 @@ const BannerThumb = styled.div`
   transition: all 0.3s linear;
   opacity: 1;
   transform: translateZ(0);
+
+  @media (max-width: 1535px) {
+    left: calc(39% + 150px);
+  }
 `;
 
 const Container = () => {
   return (
-    <BannerContainer>
+    <BannerContainer className="container mx-auto px-4">
       <BannerRow>
         <BannerContent>
           <BannerCurrently>

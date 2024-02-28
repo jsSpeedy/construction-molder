@@ -8,6 +8,10 @@ const Container = styled.div`
   transform: translateY(-50%);
   display: grid;
   gap: 220px;
+
+  @media (max-width: 1535px) {
+    left: -60px;
+  }
 `;
 
 const InfoMobile = styled.div`
@@ -24,6 +28,14 @@ const InfoMobile = styled.div`
 
     img {
       transform: rotate(-90deg);
+    }
+  }
+
+  @media (max-width: 1535px) {
+    gap: 16px;
+
+    a {
+      font-size: 16px;
     }
   }
 `;
@@ -44,6 +56,19 @@ const InfoScroll = styled.div`
 
   .bar {
     transform: rotate(-90deg);
+  }
+
+  @media (max-width: 1535px) {
+    gap: 50px;
+
+    a {
+      font-size: 15px;
+    }
+
+    img {
+      width: 20px;
+      object-fit: contain;
+    }
   }
 `;
 
