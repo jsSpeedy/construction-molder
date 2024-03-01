@@ -57,7 +57,7 @@ const HeaderButton = styled.a`
     padding: 16px 10px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     padding: 7px 11px;
   }
 `;
@@ -87,7 +87,7 @@ const HeaderMenuButton = styled.div`
     height: 48px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     width: 39px;
     height: 39px;
 

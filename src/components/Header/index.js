@@ -60,7 +60,7 @@ const HeaderWrapper = styled.div`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     &::before {
       display: none;
     }
@@ -75,7 +75,7 @@ const HeaderLogo = styled.a`
   display: block;
   width: 150px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     width: 100px;
   }
 `;

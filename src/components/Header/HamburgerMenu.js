@@ -7,7 +7,7 @@ const HeaderBar = styled.div`
   height: 20px;
   cursor: pointer;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1023px) {
     display: none;
   }
 
