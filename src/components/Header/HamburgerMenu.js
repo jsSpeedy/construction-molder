@@ -108,7 +108,7 @@ const HamburgerMenu = () => {
         <span></span>
         <span></span>
       </HeaderBar>
-      <Menu isOpen={isOpen}>
+      <Menu style={{ display: isOpen ? "block" : "none" }}>
         {menuData.map((item, index) => (
           <MenuItem key={index}>
             <MenuItemButton>{item}</MenuItemButton>
