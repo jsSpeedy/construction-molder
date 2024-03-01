@@ -18,6 +18,10 @@ const Container = styled.div`
   @media (max-width: 1535px) {
     right: -60px;
   }
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 const Social = styled.a`

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 const BannerContainer = styled.div`
   /* display: flex;
@@ -10,18 +11,25 @@ const BannerContainer = styled.div`
 
 const BannerRow = styled.div`
   display: flex;
-  flex: 75% 25%;
 `;
 
 const BannerContent = styled.div`
   padding: 140px 0 180px;
 
-  @media (max-width: 1600px) and (min-width: 1200px) {
+  @media (max-width: 1740px) and (min-width: 1535px) {
     padding-left: 115px;
   }
 
-  @media (max-width: 1535px) {
+  @media (max-width: 1400px) and (min-width: 1280px) {
     padding-left: 65px;
+  }
+
+  @media (max-width: 1130px) and (min-width: 1024px) {
+    padding-left: 45px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 75px 0 0;
   }
 `;
 
@@ -42,6 +50,14 @@ const BannerHeader = styled.h1`
 
   @media (max-width: 1535px) {
     font-size: 86px;
+  }
+
+  @media (max-width: 1279px) {
+    font-size: 75px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 60px;
   }
 `;
 
@@ -142,6 +158,19 @@ const BannerThumb = styled.div`
 
   @media (max-width: 1535px) {
     left: calc(39% + 150px);
+  }
+
+  @media (max-width: 1279px) {
+    img {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
 `;
 

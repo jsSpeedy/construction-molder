@@ -13,6 +13,10 @@ const Banner = styled.div`
   position: relative;
   overflow: hidden;
   background-attachment: fixed;
+
+  @media (max-width: 1023px) {
+    height: 50vh;
+  }
 `;
 
 const BannerSection = () => {
