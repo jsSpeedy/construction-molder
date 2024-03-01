@@ -1,11 +1,14 @@
+"use client";
+import AboutSection from "@/components/AboutSection";
 import BannerSection from "@/components/BannerSection";
-import Header from "../components/Header";
-import Image from "next/image";
+import FastMarquee from "@/components/FastMarquee";
 
 export default function Home() {
   return (
     <main>
       <BannerSection />
+      <FastMarquee />
+      <AboutSection />
     </main>
   );
 }
